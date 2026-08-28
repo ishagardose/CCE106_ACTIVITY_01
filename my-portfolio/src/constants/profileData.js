@@ -6,7 +6,7 @@ export const PROFILE_DATA = {
   avatar: avatarImg,
   statusBadges: [
     { id: 'open-to-work', label: 'Open to Work', variant: 'blue' },
-    { id: 'certified', label: 'Certified', variant: 'purple' },
+    { id: 'certified', label: 'Certiport • 2026', variant: 'purple' },
   ],
   bio: 'Computer Science student specializing in Cybersecurity, with experience building web and mobile applications. Passionate about developing secure, functional, and user-friendly applications, and always eager to learn and adapt.',
   skills: [
