@@ -1,50 +1,98 @@
-# Welcome to your Expo app 👋
+# CCE106 - Activity 01: Profile Card Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, responsive, and cross-platform Developer Profile application built with **React Native (Expo)** and **React (Vite)** following clean coding principles and modular component architecture.
 
-## Get started
+---
 
-1. Install dependencies
+## 👤 Developer Profile
 
-   ```bash
-   npm install
-   ```
+- **Name:** Princess Crisha G. Cabradilla
+- **Title:** Aspiring Cybersecurity Developer
+- **Certifications:** Certiport IT Specialist • 2026
+- **Status:** Open to Work
 
-2. Start the app
+> *"Computer Science student specializing in Cybersecurity, with experience building web and mobile applications. Passionate about developing secure, functional, and user-friendly applications, and always eager to learn and adapt."*
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠️ Technical Stack & Skills
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Cybersecurity & Core:** Cybersecurity, Python, Java, MySQL, Git
+- **Web & Frameworks:** Laravel, Quasar, HTML & CSS
+- **Mobile Development:** React Native, Expo, Flutter
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📁 Project Architecture & Clean Code Structure
 
-When you're ready, run:
+The project strictly adheres to **Single Responsibility Principle (SRP)**, **Separation of Concerns**, and **DRY (Don't Repeat Yourself)** principles:
 
-```bash
-npm run reset-project
+```text
+CCE106_ACTIVITY_01/
+├── app/                        # Expo Router Navigation & Screen Layouts
+│   ├── (tabs)/
+│   │   ├── _layout.jsx         # Bottom Tab Navigator
+│   │   ├── index.jsx           # Profile View with Safe Area & Scroll handling
+│   │   └── explore.jsx         # Secondary exploratory screen
+│   └── _layout.jsx             # Root stack navigator
+├── components/profile/         # Modular Atomic UI Components
+│   ├── Badge.jsx               # Reusable status pill badges (Open to Work, Certified)
+│   ├── SkillTag.jsx            # Atomic skill chips
+│   ├── ConnectButton.jsx       # Interactive touchable link buttons with vector icons
+│   └── ProfileCard.jsx         # Composed profile card container
+├── constants/
+│   ├── profileData.js          # Centralized data layer (Decoupled from UI)
+│   └── theme.js                # Theme color palettes & typography tokens
+├── assets/images/              # Bundled image assets
+└── my-portfolio/               # Standalone React + Vite Web Portfolio
+    └── src/
+        ├── components/         # Modular React components
+        ├── constants/          # Web profile data source
+        └── App.jsx             # Web application root
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🚀 Getting Started & Local Setup
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1. Mobile / React Native (Expo)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Clone the repository and install dependencies:
 
-## Join the community
+```bash
+git clone https://github.com/ishagardose/CCE106_ACTIVITY_01.git
+cd CCE106_ACTIVITY_01
+npm install
+```
 
-Join our community of developers creating universal apps.
+Start the development server:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+
+- **Android / iOS:** Scan the terminal QR code using **Expo Go**.
+- **Web:** Press `w` or open `http://localhost:8081` in your browser.
+
+---
+
+### 2. React Web App (Vite)
+
+Navigate to the `my-portfolio` folder:
+
+```bash
+cd my-portfolio
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📄 Activity Information
+
+- **Course:** CCE106
+- **Activity Number:** Activity 01
+- **Author:** Princess Crisha G. Cabradilla
+- **Repository:** [https://github.com/ishagardose/CCE106_ACTIVITY_01](https://github.com/ishagardose/CCE106_ACTIVITY_01)
